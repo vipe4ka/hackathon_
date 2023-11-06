@@ -7,6 +7,9 @@ var score_user
 var score_hacker
 var count_tasks = {1: 3, 2: 4, 3: 5}
 
+var max_icons = 10
+var max_side_icons = 6
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = "user"
