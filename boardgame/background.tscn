@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxslv0inn3k3v"]
+[gd_scene load_steps=5 format=3 uid="uid://bwt6k5it0lmvf"]
 
-[ext_resource type="Texture2D" uid="uid://dadk6ifo3xeoc" path="res://sprites/demospr/demo_background.png" id="1_yeplt"]
-[ext_resource type="Texture2D" uid="uid://c8e0g6to142bk" path="res://sprites/demospr/test icon.png" id="2_c8nwg"]
-[ext_resource type="Texture2D" uid="uid://cj3ecwmohj3ly" path="res://sprites/demospr/dockbar.png" id="3_jidbi"]
+[ext_resource type="Texture2D" uid="uid://vfggnqdtc2fq" path="res://sprites/demospr/demo_background.png" id="1_yeplt"]
+[ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_c8nwg"]
+[ext_resource type="Texture2D" uid="uid://bfse4xyamboeu" path="res://sprites/demospr/dockbar.png" id="3_jidbi"]
 [ext_resource type="Texture2D" uid="uid://383a3vkufj3s" path="res://sprites/demospr/demo_toolbar.png" id="4_nfr1i"]
 
 [node name="background" type="Sprite2D"]

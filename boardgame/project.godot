@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="boardgame"
-run/main_scene="res://mainWindow.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://global.gd"
+
 [display]
 
 window/size/viewport_width=1920
