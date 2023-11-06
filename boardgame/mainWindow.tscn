@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_83mld"]
 [ext_resource type="Texture2D" uid="uid://bfse4xyamboeu" path="res://sprites/demospr/dockbar.png" id="3_jna77"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
-[ext_resource type="Texture2D" uid="uid://cwfluwhidkjnm" path="res://sprites/demospr/icondock.png" id="5_ssowy"]
+[ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
 [ext_resource type="Texture2D" uid="uid://383a3vkufj3s" path="res://sprites/demospr/demo_toolbar.png" id="6_fjs7d"]
 
 [sub_resource type="GDScript" id="GDScript_7328w"]
@@ -40,7 +40,6 @@ scale = Vector2(0.599347, 0.948526)
 texture = ExtResource("3_jna77")
 
 [node name="toolbar" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(575, 504)
 scale = Vector2(1.69617, 0.514706)
 texture = ExtResource("6_fjs7d")
@@ -51,9 +50,7 @@ offset_left = 40.0
 offset_top = 594.0
 offset_right = 96.0
 offset_bottom = 650.0
-icon = ExtResource("5_ssowy")
+icon = ExtResource("6_6o8xh")
 script = SubResource("GDScript_7328w")
-
-[node name="card" type="Sprite2D" parent="."]
 
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
