@@ -55,4 +55,6 @@ offset_bottom = 650.0
 icon = ExtResource("5_ssowy")
 script = SubResource("GDScript_7328w")
 
+[node name="card" type="Sprite2D" parent="."]
+
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
