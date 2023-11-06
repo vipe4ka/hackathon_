@@ -35,6 +35,7 @@ scale = Vector2(1.5625, 1.54167)
 texture = ExtResource("2_83mld")
 
 [node name="docktaskbar" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(576, 621.998)
 scale = Vector2(0.599347, 0.948526)
 texture = ExtResource("3_jna77")
