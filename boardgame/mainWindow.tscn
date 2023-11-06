@@ -40,6 +40,7 @@ scale = Vector2(0.599347, 0.948526)
 texture = ExtResource("3_jna77")
 
 [node name="toolbar" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(575, 504)
 scale = Vector2(1.69617, 0.514706)
 texture = ExtResource("6_fjs7d")
