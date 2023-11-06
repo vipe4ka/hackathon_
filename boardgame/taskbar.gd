@@ -23,14 +23,20 @@ func _process(delta):
 func print_tasks(player, day):
 	var tasks
 	var font = load("res://typeshit/EpilepsySans.ttf")
+	var label = Label.new()
+	label.position = Vector2(-120,-125)
+	label.add_theme_font_override("font", font)
+	label.add_theme_color_override("font_color", Color(0, 0, 0, 1))
+	label.add_theme_font_size_override("font_size", 16)
+	var count_tasks = {1: 3, 2: 4, 3: 5}
 	if player == "user":
-		var label = Label.new()
-		label.add_theme_font_override("font", font)
-		label.add_theme_color_override("font_color", Color(0, 0, 0, 1))
-		label.add_theme_font_size_override("font_size", 16)
-		for i in range(tasksFirstDayUser.size()):
+		for i in range(count_tasks[day]):
 			label.text += "\n" + str(i+1) + ". " + tasksFirstDayUser[i]
-		self.add_child(label)
+	elif player == "hacker":
+		for i in range(count_tasks[day]):
+			label.text += "\n" + str(i+1) + ". " + tasksFirstDayUser[i]
+	self.add_child(label)
+	
 	
 		
 

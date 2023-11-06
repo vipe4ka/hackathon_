@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=12 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_83mld"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://can2px22lg85r" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
-[ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
@@ -74,19 +73,15 @@ texture = ExtResource("2_83mld")
 [node name="card" type="Sprite2D" parent="."]
 
 [node name="taskbar" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(1003, 156)
+position = Vector2(604, 299)
 texture = ExtResource("7_45trf")
 script = ExtResource("7_px6sx")
 
 [node name="date" type="RichTextLabel" parent="."]
-offset_left = 1077.0
-offset_top = 614.0
-offset_right = 1143.0
-offset_bottom = 635.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("9_sufvk")
-theme_override_font_sizes/normal_font_size = 16
+offset_left = 1078.0
+offset_top = 611.0
+offset_right = 1144.0
+offset_bottom = 639.0
 script = ExtResource("9_7cleu")
 
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
