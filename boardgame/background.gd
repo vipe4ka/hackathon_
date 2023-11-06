@@ -5,13 +5,12 @@ extends Sprite2D
 func _ready():
 	var config = get_node("/root/Global")
 	for i in range(config.count_tasks[config.day]):
-		var task = Sprite2D.new()
+		var task = PanelContainer.new()
 		var icon = load("res://sprites/sprite/iconetxt.png")
-		task.texture = icon
+		task
 		#task.draw_texture(icon, Vector2(100, 10*i), Color(0,0,0))
 		var window = get_parent().get_node("inventoryFrame/window")
 		window.add_child(task)
-	var int = 0
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
