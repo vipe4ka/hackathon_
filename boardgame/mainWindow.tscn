@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=10 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Texture2D" uid="uid://vfggnqdtc2fq" path="res://sprites/demospr/demo_background.png" id="1_42ycj"]
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_83mld"]
@@ -6,6 +6,8 @@
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
 [ext_resource type="Texture2D" uid="uid://cwfluwhidkjnm" path="res://sprites/demospr/icondock.png" id="5_ssowy"]
 [ext_resource type="Texture2D" uid="uid://383a3vkufj3s" path="res://sprites/demospr/demo_toolbar.png" id="6_fjs7d"]
+[ext_resource type="Texture2D" uid="uid://6fq0ty612du6" path="res://sprites/demospr/taskbar.png" id="7_10ue6"]
+[ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 
 [sub_resource type="GDScript" id="GDScript_7328w"]
 script/source = "extends Node
@@ -35,7 +37,6 @@ scale = Vector2(1.5625, 1.54167)
 texture = ExtResource("2_83mld")
 
 [node name="docktaskbar" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(576, 621.998)
 scale = Vector2(0.599347, 0.948526)
 texture = ExtResource("3_jna77")
@@ -56,5 +57,10 @@ icon = ExtResource("5_ssowy")
 script = SubResource("GDScript_7328w")
 
 [node name="card" type="Sprite2D" parent="."]
+
+[node name="taskbar" type="Sprite2D" parent="."]
+position = Vector2(604, 299)
+texture = ExtResource("7_10ue6")
+script = ExtResource("7_px6sx")
 
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
