@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://bvgbxvgr51f16"
-=======
-uid="uid://c8e0g6to142bk"
->>>>>>> 0d1ce214e904cea8744072ecb1482632dbe24ce6
-path="res://.godot/imported/test icon.png-c20b234c91ca21e593ff1d718eac3d2f.ctex"
+uid="uid://cj3ecwmohj3ly"
+path="res://.godot/imported/dockbar.png-fe5e5b6e7c2e6c7d680b20fb01d3bb74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/demospr/test icon.png"
-dest_files=["res://.godot/imported/test icon.png-c20b234c91ca21e593ff1d718eac3d2f.ctex"]
+source_file="res://sprites/demospr/dockbar.png"
+dest_files=["res://.godot/imported/dockbar.png-fe5e5b6e7c2e6c7d680b20fb01d3bb74.ctex"]
 
 [params]
 

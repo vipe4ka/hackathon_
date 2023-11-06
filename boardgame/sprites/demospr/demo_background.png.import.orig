@@ -3,19 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< HEAD
-uid="uid://bvgbxvgr51f16"
+uid="uid://rxgo3qhqn12c"
 =======
-uid="uid://c8e0g6to142bk"
->>>>>>> 0d1ce214e904cea8744072ecb1482632dbe24ce6
-path="res://.godot/imported/test icon.png-c20b234c91ca21e593ff1d718eac3d2f.ctex"
+uid="uid://dd8hvyfgb7r7f"
+>>>>>>> fbae215797050eabc3f6b378da09c0a523b7fee4
+path="res://.godot/imported/demo_background.png-1902081cf979fb49dc9ac729009c725c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/demospr/test icon.png"
-dest_files=["res://.godot/imported/test icon.png-c20b234c91ca21e593ff1d718eac3d2f.ctex"]
+source_file="res://sprites/demospr/demo_background.png"
+dest_files=["res://.godot/imported/demo_background.png-1902081cf979fb49dc9ac729009c725c.ctex"]
 
 [params]
 

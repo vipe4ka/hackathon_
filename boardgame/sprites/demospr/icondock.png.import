@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://bvgbxvgr51f16"
-=======
-uid="uid://c8e0g6to142bk"
->>>>>>> 0d1ce214e904cea8744072ecb1482632dbe24ce6
-path="res://.godot/imported/test icon.png-c20b234c91ca21e593ff1d718eac3d2f.ctex"
+uid="uid://cwue2k4hxhxry"
+path="res://.godot/imported/icondock.png-1d06f6e08e590b23796fc32be7b24f2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/demospr/test icon.png"
-dest_files=["res://.godot/imported/test icon.png-c20b234c91ca21e593ff1d718eac3d2f.ctex"]
+source_file="res://sprites/demospr/icondock.png"
+dest_files=["res://.godot/imported/icondock.png-1d06f6e08e590b23796fc32be7b24f2c.ctex"]
 
 [params]
 
