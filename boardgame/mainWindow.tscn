@@ -1,11 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=9 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_83mld"]
+[ext_resource type="Texture2D" uid="uid://caufxxsaq8h3j" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Texture2D" uid="uid://dd4osou11eku5" path="res://sprites/sprite/dockbar.png" id="3_nnpo7"]
-[ext_resource type="Texture2D" uid="uid://b40gswqtl3ot0" path="res://sprites/sprite/frame.png" id="4_hekwy"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
+
+[sub_resource type="FontFile" id="FontFile_uneq2"]
+resource_local_to_scene = true
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [sub_resource type="GDScript" id="GDScript_7328w"]
 script/source = "extends Node
@@ -24,20 +33,24 @@ func _process(delta):
 [node name="Node2D" type="Node2D"]
 
 [node name="background" type="Sprite2D" parent="."]
-position = Vector2(1, -2)
-scale = Vector2(0.207113, 0.207921)
+position = Vector2(0, -2)
+scale = Vector2(0.207293, 0.207601)
 texture = ExtResource("1_r836l")
 centered = false
 
-[node name="docktaskbar" type="Sprite2D" parent="."]
-position = Vector2(575.5, 626.024)
-scale = Vector2(2.06655, 2.42358)
-texture = ExtResource("3_nnpo7")
-
 [node name="toolbar" type="Sprite2D" parent="."]
-position = Vector2(559, 360)
-texture = ExtResource("4_hekwy")
+visible = false
+position = Vector2(577, 596)
+scale = Vector2(2.076, 2.076)
+texture = ExtResource("3_mmjw0")
 script = ExtResource("5_601i6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="docktaskbar" type="Sprite2D" parent="."]
+position = Vector2(577, 625)
+scale = Vector2(2.07554, 2.42105)
+texture = ExtResource("3_nnpo7")
 
 [node name="toolbutton" type="Button" parent="."]
 offset_left = 106.0
@@ -45,10 +58,9 @@ offset_top = 605.0
 offset_right = 162.0
 offset_bottom = 661.0
 scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = SubResource("FontFile_uneq2")
 icon = ExtResource("6_6o8xh")
 script = SubResource("GDScript_7328w")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="iconka" type="Sprite2D" parent="."]
 position = Vector2(110, 97.9997)
