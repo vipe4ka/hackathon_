@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdqfwa70io83"]
+
+[ext_resource type="Texture2D" uid="uid://dd8hvyfgb7r7f" path="res://sprites/demospr/demo_background.png" id="1_42ycj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -1)
+scale = Vector2(5.98958, 5.97222)
+texture = ExtResource("1_42ycj")
+centered = false
