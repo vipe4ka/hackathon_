@@ -1,18 +1,17 @@
-[gd_scene load_steps=11 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=15 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
-[ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_83mld"]
 [ext_resource type="Texture2D" uid="uid://cerj8jvlg5xou" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Texture2D" uid="uid://dd4osou11eku5" path="res://sprites/sprite/dockbar.png" id="3_nnpo7"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
+[ext_resource type="Texture2D" uid="uid://by2pxmb5sxyij" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
 [ext_resource type="Texture2D" uid="uid://can2px22lg85r" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
+[ext_resource type="Script" path="res://icontext.gd" id="8_6jyv4"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
-[ext_resource type="Texture2D" uid="uid://dm18lnuban1ev" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
-[ext_resource type="Script" path="res://icontext.gd" id="8_6jyv4"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
