@@ -27,7 +27,7 @@ func print_tasks(player, day):
 		var label = Label.new()
 		label.add_theme_font_override("font", font)
 		label.add_theme_color_override("font_color", Color(0, 0, 0, 1))
-		label.add_theme_font_size_override("font_size", 24)
+		label.add_theme_font_size_override("font_size", 16)
 		for i in range(tasksFirstDayUser.size()):
 			label.text += "\n" + str(i+1) + ". " + tasksFirstDayUser[i]
 		self.add_child(label)
