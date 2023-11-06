@@ -1,16 +1,28 @@
 extends Sprite2D
 
+var day
+var player
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var player = get_node("/root/Global").player
-	print_tasks(player)
-
+	player = get_node("/root/Global").player
+	day = get_node("/root/Global").day
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	print_info(player)
+	if get_node("/root/Global").completedTasks_user == get_node("/root/Global").count_tasks[day]:
+		day += 1
+		get_node("/root/Global").completedTasks_user = 0
+		get_node("/root/Global").completedTasks_hacker = 0
+		get_node("/root/Global").score_user += 1
+	elif get_node("/root/Global").completedTasks_hacker == get_node("/root/Global").count_tasks[day]:
+		day += 1
+		get_node("/root/Global").completedTasks_user = 0
+		get_node("/root/Global").completedTasks_hacker = 0
+		get_node("/root/Global").score_hacker += 1
 
-func print_tasks(player):
+func print_info(player):
 	var font = load("res://typeshit/EpilepsySans.ttf")
 	var label = Label.new()
 	var score
@@ -29,6 +41,12 @@ func print_tasks(player):
 	label.add_theme_font_override("font", font)
 	label.add_theme_color_override("font_color", Color(0, 0, 0, 1))
 	label.add_theme_font_size_override("font_size", 35)
-	label.text += "Количество очков: " + str(score)
+	label.text += "Количество очков: " + str(score) + "\n"
+	label.text += "Таски: "
+	var completedTasks
+	if player == "user":
+		label.text += str(get_node("/root/Global").completedTasks_user)
+	else:
+		label.text += str(get_node("/root/Global").completedTasks_hacker)
 	self.add_child(label)
 	self.add_child(avatar)
