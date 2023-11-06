@@ -9,7 +9,7 @@ var count_tasks = {1: 3, 2: 4, 3: 5}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	player = "user"
+	player = "hacker"
 	day = 1
 	score_user = 0
 	score_hacker = 0

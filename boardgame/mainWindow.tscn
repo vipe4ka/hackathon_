@@ -5,14 +5,18 @@
 [ext_resource type="Texture2D" uid="uid://cerj8jvlg5xou" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Texture2D" uid="uid://dd4osou11eku5" path="res://sprites/sprite/dockbar.png" id="3_nnpo7"]
 [ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
+
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
+[ext_resource type="Texture2D" uid="uid://cmukxv704p6bf" path="res://sprites/sprite/dockbar1.png" id="5_fuhjc"]
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
-[ext_resource type="Texture2D" uid="uid://by2pxmb5sxyij" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
-[ext_resource type="Texture2D" uid="uid://can2px22lg85r" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
+[ext_resource type="Texture2D" uid="uid://dm18lnuban1ev" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
+[ext_resource type="Texture2D" uid="uid://k2klks6eo0r7" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://icontext.gd" id="8_6jyv4"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
+[ext_resource type="Script" path="res://startbutton.gd" id="13_u6k52"]
+[ext_resource type="Script" path="res://game_info.gd" id="14_r4css"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
@@ -64,15 +68,15 @@ texture = ExtResource("3_mmjw0")
 script = ExtResource("5_601i6")
 
 [node name="docktaskbar" type="Sprite2D" parent="."]
-position = Vector2(973, 1049.39)
-scale = Vector2(3.5, 3.30416)
-texture = ExtResource("3_nnpo7")
+position = Vector2(960, 1040)
+scale = Vector2(1, 0.944)
+texture = ExtResource("5_fuhjc")
 
 [node name="toolbutton" type="Button" parent="."]
-offset_left = 151.0
-offset_top = 995.0
-offset_right = 207.0
-offset_bottom = 1051.0
+offset_left = 206.0
+offset_top = 985.0
+offset_right = 262.0
+offset_bottom = 1041.0
 scale = Vector2(2, 2)
 theme_override_fonts/font = SubResource("FontFile_uneq2")
 icon = ExtResource("6_6o8xh")
@@ -81,17 +85,16 @@ script = SubResource("GDScript_7328w")
 metadata/_edit_use_anchors_ = true
 
 [node name="icontext" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(82, 818)
 scale = Vector2(1.5, 1.481)
 texture = ExtResource("7_7v2md")
 script = ExtResource("8_6jyv4")
 
 [node name="date" type="RichTextLabel" parent="."]
-offset_left = 1851.0
-offset_top = 1039.0
-offset_right = 1917.0
-offset_bottom = 1060.0
+offset_left = 1821.0
+offset_top = 1022.0
+offset_right = 1887.0
+offset_bottom = 1043.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("9_sufvk")
 theme_override_font_sizes/normal_font_size = 16
@@ -100,9 +103,24 @@ script = ExtResource("9_7cleu")
 [node name="titlewindow" type="Sprite2D" parent="."]
 
 [node name="taskbar" type="Sprite2D" parent="."]
-position = Vector2(1755, 170)
+position = Vector2(1734, 183)
 texture = ExtResource("7_45trf")
 script = ExtResource("7_px6sx")
 
+[node name="startbutton" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 1002.0
+offset_right = 210.0
+offset_bottom = 1067.0
+flat = true
+script = ExtResource("13_u6k52")
+
+[node name="game_info" type="Sprite2D" parent="."]
+position = Vector2(1726, 934)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_mmjw0")
+script = ExtResource("14_r4css")
+
 [connection signal="visibility_changed" from="toolbar" to="icontext" method="_on_toolbar_visibility_changed"]
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
+[connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
