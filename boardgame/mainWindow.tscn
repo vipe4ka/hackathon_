@@ -79,23 +79,22 @@ script = ExtResource("8_6jyv4")
 
 [node name="card" type="Sprite2D" parent="."]
 
-[node name="taskbar" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(1003, 156)
-texture = ExtResource("7_45trf")
-script = ExtResource("7_px6sx")
-
 [node name="date" type="RichTextLabel" parent="."]
-offset_left = 1077.0
-offset_top = 614.0
-offset_right = 1143.0
-offset_bottom = 635.0
+offset_left = 1851.0
+offset_top = 1039.0
+offset_right = 1917.0
+offset_bottom = 1060.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("9_sufvk")
 theme_override_font_sizes/normal_font_size = 16
 script = ExtResource("9_7cleu")
 
 [node name="titlewindow" type="Sprite2D" parent="."]
+
+[node name="taskbar" type="Sprite2D" parent="."]
+position = Vector2(1786, 170)
+texture = ExtResource("7_45trf")
+script = ExtResource("7_px6sx")
 
 [connection signal="visibility_changed" from="toolbar" to="icontext" method="_on_toolbar_visibility_changed"]
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
