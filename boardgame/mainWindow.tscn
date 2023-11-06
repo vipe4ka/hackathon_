@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=16 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
 [ext_resource type="Texture2D" uid="uid://cerj8jvlg5xou" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Texture2D" uid="uid://dd4osou11eku5" path="res://sprites/sprite/dockbar.png" id="3_nnpo7"]
+[ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
 [ext_resource type="Texture2D" uid="uid://by2pxmb5sxyij" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
@@ -39,19 +40,28 @@ func _process(delta):
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
 
+[node name="inventoryFrame" type="PanelContainer" parent="."]
+offset_right = 1949.0
+offset_bottom = 1104.0
+
+[node name="taskbar" type="HBoxContainer" parent="inventoryFrame"]
+layout_mode = 2
+
+[node name="window" type="GridContainer" parent="inventoryFrame"]
+layout_mode = 2
+
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(0, -2)
 scale = Vector2(0.35, 0.352)
 texture = ExtResource("1_r836l")
 centered = false
+script = ExtResource("3_wus3v")
 
 [node name="toolbar" type="Sprite2D" parent="."]
 position = Vector2(417, 869)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_mmjw0")
 script = ExtResource("5_601i6")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="docktaskbar" type="Sprite2D" parent="."]
 position = Vector2(973, 1049.39)
@@ -77,8 +87,6 @@ scale = Vector2(1.5, 1.481)
 texture = ExtResource("7_7v2md")
 script = ExtResource("8_6jyv4")
 
-[node name="card" type="Sprite2D" parent="."]
-
 [node name="date" type="RichTextLabel" parent="."]
 offset_left = 1851.0
 offset_top = 1039.0
@@ -92,7 +100,7 @@ script = ExtResource("9_7cleu")
 [node name="titlewindow" type="Sprite2D" parent="."]
 
 [node name="taskbar" type="Sprite2D" parent="."]
-position = Vector2(1786, 170)
+position = Vector2(1755, 170)
 texture = ExtResource("7_45trf")
 script = ExtResource("7_px6sx")
 
