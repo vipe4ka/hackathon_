@@ -1,6 +1,5 @@
 [gd_scene load_steps=8 format=3 uid="uid://bdqfwa70io83"]
 
-<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://dadk6ifo3xeoc" path="res://sprites/demospr/demo_background.png" id="1_42ycj"]
 [ext_resource type="Texture2D" uid="uid://c8e0g6to142bk" path="res://sprites/demospr/test icon.png" id="2_83mld"]
 [ext_resource type="Texture2D" uid="uid://cj3ecwmohj3ly" path="res://sprites/demospr/dockbar.png" id="3_jna77"]
@@ -8,12 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://cwue2k4hxhxry" path="res://sprites/demospr/icondock.png" id="5_ssowy"]
 [ext_resource type="Script" path="res://Button.gd" id="6_5ltn4"]
 [ext_resource type="Texture2D" uid="uid://383a3vkufj3s" path="res://sprites/demospr/demo_toolbar.png" id="6_fjs7d"]
-=======
-[ext_resource type="Texture2D" uid="uid://dd8hvyfgb7r7f" path="res://sprites/demospr/demo_background.png" id="1_42ycj"]
-[ext_resource type="Texture2D" uid="uid://cl1upk2g4nset" path="res://sprites/demospr/test icon.png" id="2_83mld"]
-[ext_resource type="Texture2D" uid="uid://j3cg1wkdcum2" path="res://sprites/demospr/dockbar.png" id="3_jna77"]
-[ext_resource type="Texture2D" uid="uid://cqet460qb0si1" path="res://sprites/demospr/icondock.png" id="4_2djkf"]
->>>>>>> 4e8faab9b77a6f2b8753d9e7fad478240f8589e8
 
 [node name="Node2D" type="Node2D"]
 
