@@ -8,7 +8,7 @@ var score_hacker
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	player = "user"
+	player = "hacker"
 	day = 1
 	score_user = 0
 	score_hacker = 0
