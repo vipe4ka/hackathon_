@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=11 format=3 uid="uid://bdqfwa70io83"]
 
+[ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="2_83mld"]
 [ext_resource type="Texture2D" uid="uid://cerj8jvlg5xou" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
@@ -10,6 +11,8 @@
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
+[ext_resource type="Texture2D" uid="uid://dm18lnuban1ev" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
+[ext_resource type="Script" path="res://icontext.gd" id="8_6jyv4"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
@@ -35,41 +38,45 @@ func _process(delta):
 "
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_l1a22")
 
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(0, -2)
-scale = Vector2(0.207293, 0.207601)
+scale = Vector2(0.35, 0.352)
 texture = ExtResource("1_r836l")
 centered = false
 
 [node name="toolbar" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(577, 596)
-scale = Vector2(2.076, 2.076)
+position = Vector2(417, 869)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_mmjw0")
 script = ExtResource("5_601i6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="docktaskbar" type="Sprite2D" parent="."]
-position = Vector2(577, 625)
-scale = Vector2(2.07554, 2.42105)
+position = Vector2(973, 1049.39)
+scale = Vector2(3.5, 3.30416)
 texture = ExtResource("3_nnpo7")
 
 [node name="toolbutton" type="Button" parent="."]
-offset_left = 106.0
-offset_top = 605.0
-offset_right = 162.0
-offset_bottom = 661.0
-scale = Vector2(0.7, 0.7)
+offset_left = 151.0
+offset_top = 995.0
+offset_right = 207.0
+offset_bottom = 1051.0
+scale = Vector2(2, 2)
 theme_override_fonts/font = SubResource("FontFile_uneq2")
 icon = ExtResource("6_6o8xh")
+flat = true
 script = SubResource("GDScript_7328w")
+metadata/_edit_use_anchors_ = true
 
-[node name="iconka" type="Sprite2D" parent="."]
-position = Vector2(110, 97.9997)
-scale = Vector2(1.5625, 1.54167)
-texture = ExtResource("2_83mld")
+[node name="icontext" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(82, 818)
+scale = Vector2(1.5, 1.481)
+texture = ExtResource("7_7v2md")
+script = ExtResource("8_6jyv4")
 
 [node name="card" type="Sprite2D" parent="."]
 
@@ -89,4 +96,7 @@ theme_override_fonts/normal_font = ExtResource("9_sufvk")
 theme_override_font_sizes/normal_font_size = 16
 script = ExtResource("9_7cleu")
 
+[node name="titlewindow" type="Sprite2D" parent="."]
+
+[connection signal="visibility_changed" from="toolbar" to="icontext" method="_on_toolbar_visibility_changed"]
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]

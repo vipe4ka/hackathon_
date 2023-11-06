@@ -15,9 +15,17 @@ run/main_scene="res://mainWindow.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
+<<<<<<< HEAD
 [autoload]
 
 Global="*res://global.gd"
+=======
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+>>>>>>> b97a12cb60325c79a3ea63df7857df062b67207d
 
 [rendering]
 
