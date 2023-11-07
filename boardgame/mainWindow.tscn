@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=38 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
 [ext_resource type="Texture2D" uid="uid://cftyi1hago45a" path="res://sprites/sprite/dockbar1.png" id="5_fuhjc"]
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
+[ext_resource type="Texture2D" uid="uid://by2pxmb5sxyij" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
 [ext_resource type="Texture2D" uid="uid://can2px22lg85r" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
@@ -15,31 +16,27 @@
 [ext_resource type="Script" path="res://startbutton.gd" id="13_u6k52"]
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="14_3w0dd"]
 [ext_resource type="Script" path="res://game_info.gd" id="14_r4css"]
-[ext_resource type="Script" path="res://usernotask.gd" id="15_6ch32"]
-[ext_resource type="Script" path="res://usergettask.gd" id="16_l5hqw"]
+[ext_resource type="Texture2D" uid="uid://dcas6rmwbqllp" path="res://sprites/sprite/iconpack/mypc.png" id="14_uc85n"]
+[ext_resource type="Texture2D" uid="uid://fboh7511nl3a" path="res://sprites/sprite/iconpack/expl.png" id="15_2bii2"]
+[ext_resource type="Texture2D" uid="uid://cm4wdn518wfpr" path="res://sprites/sprite/iconpack/pxArt (4).png" id="16_flkym"]
 [ext_resource type="Script" path="res://card1.gd" id="17_83ut5"]
-[ext_resource type="Script" path="res://hackergettask.gd" id="18_4e4ho"]
+[ext_resource type="Script" path="res://res01.gd" id="17_e1xjb"]
 [ext_resource type="Script" path="res://card2.gd" id="18_ataiy"]
+[ext_resource type="Texture2D" uid="uid://cph3ev8u53u28" path="res://sprites/sprite/iconpack/pxArt (7).png" id="18_vtxfa"]
 [ext_resource type="Script" path="res://card3.gd" id="19_xdy6u"]
+[ext_resource type="Texture2D" uid="uid://cvtwbe6ihteur" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
+[ext_resource type="Texture2D" uid="uid://74ftlqqyoahe" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
 [ext_resource type="Script" path="res://card4.gd" id="20_ticd8"]
 [ext_resource type="Script" path="res://card5.gd" id="21_17ffw"]
+[ext_resource type="Texture2D" uid="uid://lbd3iyyttjom" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
 [ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
-[ext_resource type="Texture2D" uid="uid://sbq0igp1lxgj" path="res://sprites/sprite/iconpack/mypc.png" id="14_uc85n"]
-[ext_resource type="Texture2D" uid="uid://kp53aa0twsvr" path="res://sprites/sprite/iconpack/expl.png" id="15_2bii2"]
-[ext_resource type="Texture2D" uid="uid://dtbp0esqdb8ki" path="res://sprites/sprite/iconpack/pxArt (4).png" id="16_flkym"]
-[ext_resource type="Script" path="res://res01.gd" id="17_e1xjb"]
-[ext_resource type="Texture2D" uid="uid://b8llrocxtpwss" path="res://sprites/sprite/iconpack/pxArt (7).png" id="18_vtxfa"]
-[ext_resource type="Texture2D" uid="uid://dldib21ls53n3" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
-[ext_resource type="Texture2D" uid="uid://b7cihq71gce04" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
-[ext_resource type="Texture2D" uid="uid://bmqbo43ayj727" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
-[ext_resource type="Texture2D" uid="uid://grwrr7mvmovh" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
-[ext_resource type="Texture2D" uid="uid://cn8fkllbg0fsq" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
-[ext_resource type="Texture2D" uid="uid://cvvc8yh3x1cn4" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
-[ext_resource type="Texture2D" uid="uid://d1dgjhv2tnjpx" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
-[ext_resource type="Texture2D" uid="uid://rbit1b5wj0kk" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
-[ext_resource type="Texture2D" uid="uid://c1g76fmnpe2s1" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
-[ext_resource type="Texture2D" uid="uid://lm2r8mrswteg" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
-
+[ext_resource type="Texture2D" uid="uid://dy4chkf8wtkk1" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
+[ext_resource type="Texture2D" uid="uid://cpdehrcqisivv" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
+[ext_resource type="Texture2D" uid="uid://b4of6liww40u0" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
+[ext_resource type="Texture2D" uid="uid://o0gvqsbg0kk5" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
+[ext_resource type="Texture2D" uid="uid://cfmbda1p762rr" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
+[ext_resource type="Texture2D" uid="uid://clydiqm1shq01" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
+[ext_resource type="Texture2D" uid="uid://0p1ny5hgk6yg" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
 cache/0/16/0/ascent = 0.0
@@ -130,14 +127,6 @@ layout_mode = 2
 columns = 9
 script = ExtResource("13_njji7")
 
-[node name="hackergettask" type="Button" parent="."]
-custom_minimum_size = Vector2(100, 100)
-offset_left = 252.0
-offset_top = 496.0
-offset_right = 352.0
-offset_bottom = 596.0
-text = "hacker"
-script = ExtResource("18_4e4ho")
 [node name="mycomp" type="TextureButton" parent="PanelContainer/GridContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
@@ -408,8 +397,4 @@ script = ExtResource("21_17ffw")
 layout_mode = 2
 script = ExtResource("22_ogro8")
 
-[connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
 [connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
-[connection signal="pressed" from="usernotask" to="usernotask" method="_on_pressed"]
-[connection signal="pressed" from="usergettask" to="usergettask" method="_on_pressed"]
-[connection signal="pressed" from="hackergettask" to="hackergettask" method="_on_pressed"]
