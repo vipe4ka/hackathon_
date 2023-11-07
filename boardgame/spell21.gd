@@ -3,7 +3,6 @@ extends TextureButton
 var cards
 var current_card
 var player
-var player
 var placeX = 0
 var placeY = 0
 var user
