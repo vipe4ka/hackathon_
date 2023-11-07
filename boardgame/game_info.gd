@@ -21,6 +21,7 @@ func _process(delta):
 		get_node("/root/Global").score_hacker += 1
 
 func print_info(player):
+	self.remove_child(self.get_child(0))
 	var font = load("res://typeshit/EpilepsySans.ttf")
 	var label = Label.new()
 	var score
