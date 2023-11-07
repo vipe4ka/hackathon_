@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=21 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://b8wbsgx422cs2" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
@@ -9,11 +10,24 @@
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
 [ext_resource type="Texture2D" uid="uid://doagx7go76m4" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
 [ext_resource type="Texture2D" uid="uid://dm7bi68tcmgsy" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
+=======
+[ext_resource type="Texture2D" uid="uid://caufxxsaq8h3j" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
+[ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
+[ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
+[ext_resource type="Texture2D" uid="uid://cmukxv704p6bf" path="res://sprites/sprite/dockbar1.png" id="5_fuhjc"]
+[ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
+[ext_resource type="Texture2D" uid="uid://dm18lnuban1ev" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
+[ext_resource type="Texture2D" uid="uid://k2klks6eo0r7" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
+>>>>>>> ba6c69ba6e1d0fa39709cacb3ed826b305041859
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
 [ext_resource type="Script" path="res://startbutton.gd" id="13_u6k52"]
 [ext_resource type="Script" path="res://game_info.gd" id="14_r4css"]
+[ext_resource type="Script" path="res://usernotask.gd" id="15_6ch32"]
+[ext_resource type="Script" path="res://usergettask.gd" id="16_l5hqw"]
+[ext_resource type="Script" path="res://hackernotask.gd" id="17_7xyn1"]
+[ext_resource type="Script" path="res://hackergettask.gd" id="18_4e4ho"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
@@ -41,13 +55,16 @@ func _process(delta):
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
 
-[node name="inventoryFrame" type="PanelContainer" parent="."]
+[node name="windowFrame" type="PanelContainer" parent="."]
 offset_left = 100.0
 offset_top = 58.0
-offset_right = 669.0
-offset_bottom = 264.0
+offset_right = 1538.0
+offset_bottom = 675.0
 
-[node name="window" type="GridContainer" parent="inventoryFrame"]
+[node name="HBoxContainer" type="HBoxContainer" parent="windowFrame"]
+layout_mode = 2
+
+[node name="window" type="GridContainer" parent="windowFrame/HBoxContainer"]
 z_index = 1
 layout_direction = 3
 layout_mode = 2
@@ -57,73 +74,135 @@ theme_override_constants/h_separation = 128
 theme_override_constants/v_separation = 128
 columns = 5
 
-[node name="icon" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon1" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon1"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon10" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="Marker2D" type="Marker2D" parent="windowFrame/HBoxContainer/window/icon1"]
+
+[node name="icon10" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon10"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon10"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon9" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon9" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon9"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon9"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon7" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon7" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon7"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon7"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon8" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon8" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon8"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon8"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon2" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon2" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon2"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon2"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon3" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon3" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon3"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon3"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon4" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon4" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon4"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon4"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon5" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon5" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon5"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon5"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="icon6" type="PanelContainer" parent="inventoryFrame/window"]
+[node name="icon6" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/window/icon6"]
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon6"]
+visible = false
 texture = ExtResource("7_7v2md")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="side_window" type="GridContainer" parent="windowFrame/HBoxContainer"]
+z_index = 1
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+theme_override_constants/h_separation = 128
+theme_override_constants/v_separation = 128
+columns = 3
+
+[node name="side_icon1" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon1"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon6" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon6"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon5" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon5"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon2" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon2"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon3" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon3"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon4" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon4"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="inventoryFrame" type="PanelContainer" parent="."]
 offset_left = 60.0
-offset_top = 793.0
-offset_right = 689.0
+offset_top = 860.0
+offset_right = 800.0
 offset_bottom = 976.0
 
-[node name="window2" type="GridContainer" parent="PanelContainer"]
+[node name="inventoryGrid" type="GridContainer" parent="inventoryFrame"]
 z_index = 1
 layout_direction = 3
 layout_mode = 2
@@ -131,42 +210,43 @@ size_flags_horizontal = 0
 size_flags_stretch_ratio = 10.25
 theme_override_constants/h_separation = 128
 theme_override_constants/v_separation = 128
-columns = 5
+columns = 6
 
-[node name="card" type="PanelContainer" parent="PanelContainer/window2"]
+[node name="card1" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/window2/card"]
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card1"]
 texture = ExtResource("7_7v2md")
 
-[node name="card3" type="PanelContainer" parent="PanelContainer/window2"]
+[node name="card3" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/window2/card3"]
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card3"]
 texture = ExtResource("7_7v2md")
 
-[node name="card4" type="PanelContainer" parent="PanelContainer/window2"]
+[node name="card4" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/window2/card4"]
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card4"]
 texture = ExtResource("7_7v2md")
 
-[node name="card5" type="PanelContainer" parent="PanelContainer/window2"]
+[node name="card5" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/window2/card5"]
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card5"]
 texture = ExtResource("7_7v2md")
 
-[node name="card6" type="PanelContainer" parent="PanelContainer/window2"]
+[node name="card6" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/window2/card6"]
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card6"]
 texture = ExtResource("7_7v2md")
 
-[node name="card7" type="PanelContainer" parent="PanelContainer/window2"]
+[node name="card2" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
 layout_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/window2/card7"]
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card2"]
 texture = ExtResource("7_7v2md")
 
 [node name="background" type="Sprite2D" parent="."]
@@ -231,5 +311,43 @@ scale = Vector2(0.7, 0.7)
 texture = ExtResource("3_mmjw0")
 script = ExtResource("14_r4css")
 
+[node name="usernotask" type="Button" parent="."]
+offset_left = 76.0
+offset_top = 352.0
+offset_right = 176.0
+offset_bottom = 452.0
+text = "no user"
+script = ExtResource("15_6ch32")
+
+[node name="usergettask" type="Button" parent="."]
+offset_left = 250.0
+offset_top = 352.0
+offset_right = 350.0
+offset_bottom = 452.0
+text = "user"
+script = ExtResource("16_l5hqw")
+
+[node name="hackernotask" type="Button" parent="."]
+offset_left = 78.0
+offset_top = 489.0
+offset_right = 178.0
+offset_bottom = 589.0
+text = "no hacker
+"
+script = ExtResource("17_7xyn1")
+
+[node name="hackergettask" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 252.0
+offset_top = 496.0
+offset_right = 352.0
+offset_bottom = 596.0
+text = "hacker"
+script = ExtResource("18_4e4ho")
+
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
 [connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="usernotask" to="usernotask" method="_on_pressed"]
+[connection signal="pressed" from="usergettask" to="usergettask" method="_on_pressed"]
+[connection signal="pressed" from="hackernotask" to="hackernotask" method="_on_pressed"]
+[connection signal="pressed" from="hackergettask" to="hackergettask" method="_on_pressed"]
