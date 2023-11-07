@@ -19,6 +19,8 @@ func _on_pressed():
 	if get_node("/root/Global").player == "user":
 		if user == Vector2(placeX - 1, placeY) or user == Vector2(placeX, placeY + 1) or user == Vector2(placeX + 1, placeY):
 			get_node("/root/Global").user = Vector2(placeX, placeY)
+		else:
+			pass
 	elif get_node("/root/Global").player == "hacker":
 		if hacker == Vector2(placeX - 1, placeY) or hacker == Vector2(placeX, placeY + 1) or hacker == Vector2(placeX + 1, placeY):
 			get_node("/root/Global").hacker = Vector2(placeX, placeY)

@@ -10,17 +10,16 @@ func _ready():
 	player = get_node("/root/Global").player
 	user = get_node("/root/Global").user
 	hacker = get_node("/root/Global").hacker
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
 func _on_pressed():
 	if get_node("/root/Global").player == "user":
-		if user == Vector2(placeX - 1, placeY) or user == Vector2(placeX, placeY + 1) or user == Vector2(placeX + 1, placeY):
+		if user == Vector2(placeX, placeY - 1) or user == Vector2(placeX - 1, placeY) or user == Vector2(placeX + 1, placeY) + user == Vector2(placeX, placeY + 1):
 			get_node("/root/Global").user = Vector2(placeX, placeY)
 	elif get_node("/root/Global").player == "hacker":
-		if hacker == Vector2(placeX - 1, placeY) or hacker == Vector2(placeX, placeY + 1) or hacker == Vector2(placeX + 1, placeY):
+		if hacker == Vector2(placeX, placeY - 1) or hacker == Vector2(placeX - 1, placeY) or hacker == Vector2(placeX + 1, placeY) or hacker == Vector2(placeX, placeY  + 1):
 			get_node("/root/Global").hacker = Vector2(placeX, placeY)
 	
 	
