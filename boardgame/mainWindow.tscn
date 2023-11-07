@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=32 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
@@ -11,7 +11,9 @@
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
+[ext_resource type="Script" path="res://GridContainer.gd" id="13_njji7"]
 [ext_resource type="Script" path="res://startbutton.gd" id="13_u6k52"]
+[ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="14_3w0dd"]
 [ext_resource type="Script" path="res://game_info.gd" id="14_r4css"]
 [ext_resource type="Script" path="res://usernotask.gd" id="15_6ch32"]
 [ext_resource type="Script" path="res://usergettask.gd" id="16_l5hqw"]
@@ -22,6 +24,21 @@
 [ext_resource type="Script" path="res://card4.gd" id="20_ticd8"]
 [ext_resource type="Script" path="res://card5.gd" id="21_17ffw"]
 [ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
+[ext_resource type="Texture2D" uid="uid://sbq0igp1lxgj" path="res://sprites/sprite/iconpack/mypc.png" id="14_uc85n"]
+[ext_resource type="Texture2D" uid="uid://kp53aa0twsvr" path="res://sprites/sprite/iconpack/expl.png" id="15_2bii2"]
+[ext_resource type="Texture2D" uid="uid://dtbp0esqdb8ki" path="res://sprites/sprite/iconpack/pxArt (4).png" id="16_flkym"]
+[ext_resource type="Script" path="res://res01.gd" id="17_e1xjb"]
+[ext_resource type="Texture2D" uid="uid://b8llrocxtpwss" path="res://sprites/sprite/iconpack/pxArt (7).png" id="18_vtxfa"]
+[ext_resource type="Texture2D" uid="uid://dldib21ls53n3" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
+[ext_resource type="Texture2D" uid="uid://b7cihq71gce04" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
+[ext_resource type="Texture2D" uid="uid://bmqbo43ayj727" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
+[ext_resource type="Texture2D" uid="uid://grwrr7mvmovh" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
+[ext_resource type="Texture2D" uid="uid://cn8fkllbg0fsq" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
+[ext_resource type="Texture2D" uid="uid://cvvc8yh3x1cn4" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
+[ext_resource type="Texture2D" uid="uid://d1dgjhv2tnjpx" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
+[ext_resource type="Texture2D" uid="uid://rbit1b5wj0kk" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
+[ext_resource type="Texture2D" uid="uid://c1g76fmnpe2s1" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
+[ext_resource type="Texture2D" uid="uid://lm2r8mrswteg" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
@@ -46,6 +63,7 @@ func _process(delta):
 	pass
 "
 
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
 
@@ -56,29 +74,16 @@ texture = ExtResource("1_r836l")
 centered = false
 script = ExtResource("3_wus3v")
 
-[node name="toolbar" type="Sprite2D" parent="."]
-position = Vector2(417, 869)
-scale = Vector2(1.5, 1.5)
+[node name="inventory" type="Sprite2D" parent="."]
+position = Vector2(417, 879.5)
+scale = Vector2(1.5, 1.395)
 texture = ExtResource("3_mmjw0")
 script = ExtResource("5_601i6")
 
-[node name="docktaskbar" type="Sprite2D" parent="."]
+[node name="dockbar" type="Sprite2D" parent="."]
 position = Vector2(960, 1040)
 scale = Vector2(1, 0.944)
 texture = ExtResource("5_fuhjc")
-
-[node name="toolbutton" type="Button" parent="."]
-clip_contents = true
-offset_left = 216.0
-offset_top = 994.0
-offset_right = 272.0
-offset_bottom = 1050.0
-scale = Vector2(1.675, 1.675)
-theme_override_fonts/font = SubResource("FontFile_uneq2")
-icon = ExtResource("6_6o8xh")
-flat = true
-script = SubResource("GDScript_7328w")
-metadata/_edit_use_anchors_ = true
 
 [node name="date" type="RichTextLabel" parent="."]
 offset_left = 1821.0
@@ -111,21 +116,19 @@ scale = Vector2(0.7, 0.7)
 texture = ExtResource("3_mmjw0")
 script = ExtResource("14_r4css")
 
-[node name="usernotask" type="Button" parent="."]
-offset_left = 76.0
-offset_top = 352.0
-offset_right = 176.0
-offset_bottom = 452.0
-text = "no user"
-script = ExtResource("15_6ch32")
+[node name="PanelContainer" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+custom_minimum_size = Vector2(150, 150)
+offset_left = 330.0
+offset_right = 1463.0
+offset_bottom = 740.0
 
-[node name="usergettask" type="Button" parent="."]
-offset_left = 250.0
-offset_top = 352.0
-offset_right = 350.0
-offset_bottom = 452.0
-text = "user"
-script = ExtResource("16_l5hqw")
+[node name="GridContainer" type="GridContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+columns = 9
+script = ExtResource("13_njji7")
 
 [node name="hackergettask" type="Button" parent="."]
 custom_minimum_size = Vector2(100, 100)
@@ -135,6 +138,236 @@ offset_right = 352.0
 offset_bottom = 596.0
 text = "hacker"
 script = ExtResource("18_4e4ho")
+[node name="mycomp" type="TextureButton" parent="PanelContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+texture_normal = ExtResource("14_uc85n")
+script = ExtResource("17_e1xjb")
+
+[node name="res01" type="TextureButton" parent="PanelContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+script = ExtResource("17_e1xjb")
+
+[node name="res02" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="mail" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = ExtResource("16_flkym")
+stretch_mode = 0
+
+[node name="res04" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res05" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res06" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="1c" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("18_vtxfa")
+
+[node name="res08" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="res10" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="res11" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="spell12" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="res13" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res14" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="word" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("19_xhn7a")
+
+[node name="res16" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res17" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res18" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res20" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="spell21" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="gimp" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("20_4dg8e")
+
+[node name="spell23" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="res24" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res25" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="winrar" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("21_okami")
+
+[node name="res27" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="avast" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("22_y55lt")
+
+[node name="skype" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("23_iidhh")
+
+[node name="res31" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res32" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res33" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="browser" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("24_3a75h")
+
+[node name="res35" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res36" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res37" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res38" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res40" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res41" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="excel" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("25_lm8rp")
+
+[node name="res43" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res44" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res45" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res46" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res47" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="telegram" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("26_cpkr7")
+
+[node name="basket" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("27_ja4xp")
+
+[node name="res51" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="spell52" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="res53" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="spell54" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_7v2md")
+
+[node name="res55" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="paint" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("28_bgno5")
+
+[node name="res57" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="res58" type="TextureButton" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_2bii2")
+
+[node name="Iconexp" type="Sprite2D" parent="."]
+position = Vector2(280, 1041)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_6o8xh")
+
+[node name="TestIcon" type="Sprite2D" parent="."]
+position = Vector2(362, 1041)
+texture = ExtResource("14_3w0dd")
 
 [node name="InventoryFrame" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)

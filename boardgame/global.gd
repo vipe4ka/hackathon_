@@ -1,10 +1,16 @@
 extends Node
 
 var player
+var user
+var hacker
 var day
 var score_user
 var score_hacker
 var count_tasks = {1: 3, 2: 4, 3: 5}
+var user_tasks = [
+	
+]
+var hacker_tasks
 var completedTasks_user = 0
 var completedTasks_hacker = 0
 var card_pressed = false
@@ -27,6 +33,8 @@ var ref_cards_hacker = []
 var max_icons = 10
 var max_side_icons = 6
 var current_card_pressed = null
+var bytes
+var go_right
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -35,6 +43,8 @@ func _ready():
 	score_user = 0
 	score_hacker = 0
 	
+	bytes = 0
+	user = Vector2(0, 0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

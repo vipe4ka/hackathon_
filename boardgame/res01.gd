@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 var cards
 var current_card
