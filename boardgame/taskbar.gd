@@ -36,7 +36,3 @@ func print_tasks(player, day, count_tasks):
 		for i in range(count_tasks[day]):
 			label.text += "\n" + str(i+1) + ". " + tasksFirstDayUser[i]
 	self.add_child(label)
-	
-	
-		
-
