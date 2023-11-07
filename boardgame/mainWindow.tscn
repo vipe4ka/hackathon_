@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=92 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
@@ -17,6 +17,11 @@
 [ext_resource type="Script" path="res://startbutton.gd" id="13_u6k52"]
 [ext_resource type="Texture2D" uid="uid://urve38cuj4xn" path="res://sprites/demospr/test icon.png" id="14_3w0dd"]
 [ext_resource type="Script" path="res://game_info.gd" id="14_r4css"]
+[ext_resource type="Script" path="res://res02.gd" id="17_robu4"]
+[ext_resource type="Script" path="res://card2.gd" id="18_ataiy"]
+[ext_resource type="Script" path="res://card3.gd" id="19_xdy6u"]
+[ext_resource type="Texture2D" uid="uid://cvtwbe6ihteur" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
+[ext_resource type="Texture2D" uid="uid://74ftlqqyoahe" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
 [ext_resource type="Texture2D" uid="uid://sbq0igp1lxgj" path="res://sprites/sprite/iconpack/mypc.png" id="14_uc85n"]
 [ext_resource type="Texture2D" uid="uid://kp53aa0twsvr" path="res://sprites/sprite/iconpack/expl.png" id="15_2bii2"]
 [ext_resource type="Script" path="res://mycomp.gd" id="15_g66hc"]
@@ -26,7 +31,16 @@
 [ext_resource type="Texture2D" uid="uid://tvnlmm3h8hod" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
 [ext_resource type="Texture2D" uid="uid://1aqe58j6vccw" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
 [ext_resource type="Texture2D" uid="uid://bf7v4e4fojfva" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
+[ext_resource type="Texture2D" uid="uid://dv01r3huacfom" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
+[ext_resource type="Texture2D" uid="uid://x2rx8o5hgn0k" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
+[ext_resource type="Texture2D" uid="uid://dbtlng6tyfjhk" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
+[ext_resource type="Texture2D" uid="uid://cfkmrwxmxstjw" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
+[ext_resource type="Texture2D" uid="uid://b0qtdh8qlx57g" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
 [ext_resource type="Texture2D" uid="uid://dnry5b56ku1q4" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
+[ext_resource type="Texture2D" uid="uid://cxjyxqwh355ki" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
+[ext_resource type="Texture2D" uid="uid://dvnbr4rqy5ymx" path="res://sprites/sprite/framebutton/-.png" id="32_ckm2k"]
+[ext_resource type="Texture2D" uid="uid://b11cig6vknxo7" path="res://sprites/sprite/framebutton/sqr.png" id="33_odvvj"]
+[ext_resource type="Texture2D" uid="uid://tve1tqmw12j2" path="res://sprites/sprite/framebutton/x.png" id="34_mmbbs"]
 [ext_resource type="Script" path="res://card1.gd" id="17_83ut5"]
 [ext_resource type="Script" path="res://card2.gd" id="18_ataiy"]
 [ext_resource type="Script" path="res://res02.gd" id="18_nkta3"]
@@ -34,65 +48,6 @@
 [ext_resource type="Script" path="res://card4.gd" id="20_ticd8"]
 [ext_resource type="Script" path="res://mail.gd" id="20_vqafq"]
 [ext_resource type="Script" path="res://card5.gd" id="21_17ffw"]
-[ext_resource type="Texture2D" uid="uid://lbd3iyyttjom" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
-[ext_resource type="Script" path="res://res06.gd" id="22_ny83u"]
-[ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
-[ext_resource type="Texture2D" uid="uid://dy4chkf8wtkk1" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
-[ext_resource type="Texture2D" uid="uid://cpdehrcqisivv" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
-[ext_resource type="Texture2D" uid="uid://b4of6liww40u0" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
-[ext_resource type="Script" path="res://res08.gd" id="24_k8eeg"]
-[ext_resource type="Texture2D" uid="uid://o0gvqsbg0kk5" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
-[ext_resource type="Script" path="res://res10.gd" id="25_q37k0"]
-[ext_resource type="Script" path="res://1c.gd" id="25_r2sxj"]
-[ext_resource type="Texture2D" uid="uid://cfmbda1p762rr" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
-[ext_resource type="Script" path="res://res11.gd" id="26_ni36f"]
-[ext_resource type="Script" path="res://res13.gd" id="27_e0hke"]
-[ext_resource type="Script" path="res://spell12.gd" id="27_ew05i"]
-[ext_resource type="Texture2D" uid="uid://clydiqm1shq01" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
-[ext_resource type="Script" path="res://res14.gd" id="28_35xwe"]
-[ext_resource type="Texture2D" uid="uid://0p1ny5hgk6yg" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
-[ext_resource type="Script" path="res://res16.gd" id="30_6s52x"]
-[ext_resource type="Script" path="res://res17.gd" id="31_8frxs"]
-[ext_resource type="Script" path="res://res18.gd" id="32_4fk4u"]
-[ext_resource type="Texture2D" uid="uid://dvnbr4rqy5ymx" path="res://sprites/sprite/framebutton/-.png" id="32_ckm2k"]
-[ext_resource type="Script" path="res://res20.gd" id="33_h1o74"]
-[ext_resource type="Texture2D" uid="uid://b11cig6vknxo7" path="res://sprites/sprite/framebutton/sqr.png" id="33_odvvj"]
-[ext_resource type="Script" path="res://word.gd" id="33_plqap"]
-[ext_resource type="Script" path="res://spell21.gd" id="34_evm82"]
-[ext_resource type="Texture2D" uid="uid://tve1tqmw12j2" path="res://sprites/sprite/framebutton/x.png" id="34_mmbbs"]
-[ext_resource type="Script" path="res://spell23.gd" id="35_m032n"]
-[ext_resource type="Script" path="res://res24.gd" id="35_yg34i"]
-[ext_resource type="Script" path="res://res25.gd" id="36_2etkt"]
-[ext_resource type="Script" path="res://res27.gd" id="38_tekrw"]
-[ext_resource type="Script" path="res://gimp.gd" id="40_4q3p7"]
-[ext_resource type="Script" path="res://res31.gd" id="41_8gvux"]
-[ext_resource type="Script" path="res://res32.gd" id="42_uu27h"]
-[ext_resource type="Script" path="res://res33.gd" id="43_a62dr"]
-[ext_resource type="Script" path="res://res35.gd" id="45_0et64"]
-[ext_resource type="Script" path="res://winrar.gd" id="45_tjq3q"]
-[ext_resource type="Script" path="res://res36.gd" id="46_xefgi"]
-[ext_resource type="Script" path="res://res37.gd" id="47_rsep0"]
-[ext_resource type="Script" path="res://avast.gd" id="48_0ff1p"]
-[ext_resource type="Script" path="res://res40.gd" id="48_6gtoc"]
-[ext_resource type="Script" path="res://res38.gd" id="48_n8dal"]
-[ext_resource type="Script" path="res://res41.gd" id="50_01iup"]
-[ext_resource type="Script" path="res://skype.gd" id="50_hhoj8"]
-[ext_resource type="Script" path="res://res43.gd" id="52_ehf0c"]
-[ext_resource type="Script" path="res://res44.gd" id="53_ceomi"]
-[ext_resource type="Script" path="res://res45.gd" id="54_46osk"]
-[ext_resource type="Script" path="res://res46.gd" id="55_ae5fc"]
-[ext_resource type="Script" path="res://browser.gd" id="55_bqwcs"]
-[ext_resource type="Script" path="res://res47.gd" id="56_pyvw0"]
-[ext_resource type="Script" path="res://res51.gd" id="59_vwffu"]
-[ext_resource type="Script" path="res://res53.gd" id="60_18lee"]
-[ext_resource type="Script" path="res://spell52.gd" id="60_usu18"]
-[ext_resource type="Script" path="res://spell54.gd" id="61_77ar4"]
-[ext_resource type="Script" path="res://res55.gd" id="61_kvdbm"]
-[ext_resource type="Script" path="res://excel.gd" id="63_cco50"]
-[ext_resource type="Script" path="res://res57.gd" id="63_xgy8s"]
-[ext_resource type="Script" path="res://res58.gd" id="64_upkjs"]
-[ext_resource type="Script" path="res://telegram.gd" id="70_ducvn"]
-[ext_resource type="Script" path="res://basket.gd" id="72_0fi44"]
 [ext_resource type="Script" path="res://res04.gd" id="21_f5b4e"]
 [ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
 [ext_resource type="Script" path="res://res05.gd" id="22_x3m74"]
@@ -249,472 +204,262 @@ script = ExtResource("17_e1xjb")
 [node name="res02" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("17_robu4")
-=======
 script = ExtResource("18_nkta3")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="mail" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("16_flkym")
 stretch_mode = 0
-<<<<<<< HEAD
-script = ExtResource("19_o0jgj")
-=======
 script = ExtResource("20_vqafq")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res04" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("19_0tciy")
-=======
 script = ExtResource("21_f5b4e")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res05" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("20_pguws")
-=======
 script = ExtResource("22_x3m74")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res06" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("22_ny83u")
-=======
 script = ExtResource("24_hc6p7")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="1c" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("18_vtxfa")
-<<<<<<< HEAD
-script = ExtResource("25_r2sxj")
-=======
 script = ExtResource("26_ev87u")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res08" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("24_k8eeg")
-=======
 script = ExtResource("27_7nis8")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res10" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("25_q37k0")
-=======
 script = ExtResource("28_5mw4g")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res11" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("26_ni36f")
-=======
 script = ExtResource("29_xkyfi")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="spell12" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("27_ew05i")
-=======
 script = ExtResource("30_q03rd")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res13" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("27_e0hke")
-=======
 script = ExtResource("31_q3dx5")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res14" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("28_35xwe")
-=======
 script = ExtResource("32_36svo")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="word" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("19_xhn7a")
-<<<<<<< HEAD
-script = ExtResource("33_plqap")
-=======
 script = ExtResource("34_b6bbc")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res16" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("30_6s52x")
-=======
 script = ExtResource("35_v24py")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res17" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("31_8frxs")
-=======
 script = ExtResource("36_4bbva")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res18" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("32_4fk4u")
-=======
 script = ExtResource("37_qbjdf")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res20" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("33_h1o74")
-=======
 script = ExtResource("38_alsn5")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="spell21" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("34_evm82")
-=======
 script = ExtResource("39_tbx0s")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="gimp" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("20_4dg8e")
-<<<<<<< HEAD
-script = ExtResource("40_4q3p7")
-=======
 script = ExtResource("41_5mq25")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="spell23" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("35_m032n")
-=======
 script = ExtResource("42_3x4hk")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res24" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("35_yg34i")
-=======
 script = ExtResource("43_a6gxs")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res25" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("36_2etkt")
-=======
 script = ExtResource("44_xbu8k")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="winrar" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("21_okami")
-<<<<<<< HEAD
-script = ExtResource("45_tjq3q")
-=======
 script = ExtResource("46_i2xjl")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res27" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("38_tekrw")
-=======
 script = ExtResource("47_6kjoe")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="avast" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("22_y55lt")
-<<<<<<< HEAD
-script = ExtResource("48_0ff1p")
-=======
 script = ExtResource("49_glerc")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="skype" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("23_iidhh")
-<<<<<<< HEAD
-script = ExtResource("50_hhoj8")
-=======
 script = ExtResource("51_lcqg6")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res31" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("41_8gvux")
-=======
 script = ExtResource("52_m0fjd")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res32" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("42_uu27h")
-=======
 script = ExtResource("53_32d4j")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res33" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("43_a62dr")
-=======
 script = ExtResource("54_5l1pv")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="browser" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("24_3a75h")
-<<<<<<< HEAD
-script = ExtResource("55_bqwcs")
-=======
 script = ExtResource("56_soqrg")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res35" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("45_0et64")
-=======
 script = ExtResource("57_dr5jk")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res36" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("46_xefgi")
-=======
 script = ExtResource("58_lv8r2")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res37" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("47_rsep0")
-=======
 script = ExtResource("59_enn55")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res38" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("48_n8dal")
-=======
 script = ExtResource("60_gkfn0")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res40" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("48_6gtoc")
-=======
 script = ExtResource("61_qiayd")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
-
-[node name="res41" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
-texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("50_01iup")
-=======
 script = ExtResource("62_ljxmu")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="excel" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("25_lm8rp")
-<<<<<<< HEAD
-script = ExtResource("63_cco50")
-=======
 script = ExtResource("64_ym82d")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
+
 
 [node name="res43" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("52_ehf0c")
-=======
 script = ExtResource("65_cfk6i")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res44" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("53_ceomi")
-=======
 script = ExtResource("66_spwrp")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res45" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("54_46osk")
-=======
 script = ExtResource("67_20kuw")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res46" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("55_ae5fc")
-=======
 script = ExtResource("68_jp213")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res47" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("56_pyvw0")
-=======
 script = ExtResource("69_oxeaa")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="telegram" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("26_cpkr7")
-<<<<<<< HEAD
-script = ExtResource("70_ducvn")
-=======
 script = ExtResource("71_4n6v1")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="basket" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("27_ja4xp")
-<<<<<<< HEAD
-script = ExtResource("72_0fi44")
-=======
 script = ExtResource("73_ro2hl")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res51" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("59_vwffu")
-=======
 script = ExtResource("74_nt6fp")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="spell52" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("60_usu18")
-=======
 script = ExtResource("75_obpef")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res53" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("60_18lee")
-=======
 script = ExtResource("76_0t6aw")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="spell54" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_7v2md")
-<<<<<<< HEAD
-script = ExtResource("61_77ar4")
-=======
 script = ExtResource("77_7s043")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res55" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("61_kvdbm")
-=======
 script = ExtResource("78_kucli")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="paint" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("28_bgno5")
-<<<<<<< HEAD
-script = ExtResource("61_kvdbm")
-=======
 script = ExtResource("80_rjy6d")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res57" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("63_xgy8s")
-=======
 script = ExtResource("81_6amia")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="res58" type="TextureButton" parent="PanelContainer/GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_2bii2")
-<<<<<<< HEAD
-script = ExtResource("64_upkjs")
-=======
 script = ExtResource("82_3bj6t")
->>>>>>> 4f22a94f10132a87a7b5a173a46519efa044e54d
 
 [node name="Iconexp" type="Sprite2D" parent="."]
 position = Vector2(280, 1041)
