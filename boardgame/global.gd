@@ -13,6 +13,9 @@ var items_user_inventory
 var items_hacker_inventory
 var gamemap
 
+var max_icons = 10
+var max_side_icons = 6
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_init_map()

@@ -2,11 +2,16 @@
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
-[ext_resource type="Texture2D" uid="uid://caufxxsaq8h3j" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
+
+[ext_resource type="Texture2D" uid="uid://b8wbsgx422cs2" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
-[ext_resource type="Texture2D" uid="uid://cmukxv704p6bf" path="res://sprites/sprite/dockbar1.png" id="5_fuhjc"]
-[ext_resource type="Texture2D" uid="uid://k2klks6eo0r7" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
+[ext_resource type="Texture2D" uid="uid://mag5e871xvg7" path="res://sprites/sprite/dockbar1.png" id="5_fuhjc"]
+[ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
+[ext_resource type="Texture2D" uid="uid://doagx7go76m4" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
+[ext_resource type="Texture2D" uid="uid://dm7bi68tcmgsy" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
+
+
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
@@ -19,6 +24,200 @@
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
+
+[node name="windowFrame" type="PanelContainer" parent="."]
+offset_left = 100.0
+offset_top = 58.0
+offset_right = 1538.0
+offset_bottom = 675.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="windowFrame"]
+layout_mode = 2
+
+[node name="window" type="GridContainer" parent="windowFrame/HBoxContainer"]
+z_index = 1
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 10.25
+theme_override_constants/h_separation = 128
+theme_override_constants/v_separation = 128
+columns = 5
+
+[node name="icon1" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon1"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="Marker2D" type="Marker2D" parent="windowFrame/HBoxContainer/window/icon1"]
+
+[node name="icon10" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon10"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon9" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon9"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon7" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon7"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon8" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon8"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon2" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon2"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon3" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon3"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon4" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon4"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon5" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon5"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="icon6" type="PanelContainer" parent="windowFrame/HBoxContainer/window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/window/icon6"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_window" type="GridContainer" parent="windowFrame/HBoxContainer"]
+z_index = 1
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+theme_override_constants/h_separation = 128
+theme_override_constants/v_separation = 128
+columns = 3
+
+[node name="side_icon1" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon1"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon6" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon6"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon5" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon5"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon2" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon2"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon3" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon3"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="side_icon4" type="PanelContainer" parent="windowFrame/HBoxContainer/side_window"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="windowFrame/HBoxContainer/side_window/side_icon4"]
+visible = false
+texture = ExtResource("7_7v2md")
+
+[node name="inventoryFrame" type="PanelContainer" parent="."]
+offset_left = 60.0
+offset_top = 860.0
+offset_right = 800.0
+offset_bottom = 976.0
+
+[node name="inventoryGrid" type="GridContainer" parent="inventoryFrame"]
+z_index = 1
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 10.25
+theme_override_constants/h_separation = 128
+theme_override_constants/v_separation = 128
+columns = 6
+
+[node name="card1" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card1"]
+texture = ExtResource("7_7v2md")
+
+[node name="card3" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card3"]
+texture = ExtResource("7_7v2md")
+
+[node name="card4" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card4"]
+texture = ExtResource("7_7v2md")
+
+[node name="card5" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card5"]
+texture = ExtResource("7_7v2md")
+
+[node name="card6" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card6"]
+texture = ExtResource("7_7v2md")
+
+[node name="card2" type="PanelContainer" parent="inventoryFrame/inventoryGrid"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="inventoryFrame/inventoryGrid/card2"]
+texture = ExtResource("7_7v2md")
 
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(0, -2)
@@ -37,6 +236,19 @@ script = ExtResource("5_601i6")
 position = Vector2(960, 1040)
 scale = Vector2(1, 0.944)
 texture = ExtResource("5_fuhjc")
+
+[node name="toolbutton" type="Button" parent="."]
+clip_contents = true
+offset_left = 216.0
+offset_top = 994.0
+offset_right = 272.0
+offset_bottom = 1050.0
+scale = Vector2(1.675, 1.675)
+theme_override_fonts/font = SubResource("FontFile_uneq2")
+icon = ExtResource("6_6o8xh")
+flat = true
+script = SubResource("GDScript_7328w")
+metadata/_edit_use_anchors_ = true
 
 [node name="date" type="RichTextLabel" parent="."]
 offset_left = 1821.0
@@ -64,7 +276,7 @@ flat = true
 script = ExtResource("13_u6k52")
 
 [node name="game_info" type="Sprite2D" parent="."]
-position = Vector2(1726, 934)
+position = Vector2(1717, 932)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("3_mmjw0")
 script = ExtResource("14_r4css")
