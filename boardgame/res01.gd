@@ -17,7 +17,7 @@ func _process(delta):
 
 func _on_pressed():
 	if get_node("/root/Global").player == "user":
-		if user == Vector2(placeX - 1, placeY) or user == Vector2(placeX, placeY + 1) or user == Vector2(placeX + 1, placeY):
+		if (user.x == placeX - 1 and user.y == placeY) or (user.x == placeX and user.y == placeY + 1) or (user.x == placeX + 1 and user.y == placeY):
 			get_node("/root/Global").user = Vector2(placeX, placeY)
 			get_node("/root/Global").userPlace = self
 	elif get_node("/root/Global").player == "hacker":

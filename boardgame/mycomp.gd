@@ -18,11 +18,11 @@ func _process(delta):
 
 func _on_pressed():
 	if get_node("/root/Global").player == "user":
-		if user == Vector2(placeX + 1, placeY) or user == Vector2(placeX + 1, placeY):
+		if (user.x == placeX + 1 and user.y == placeY) or (user.x == placeX and user.y == placeY + 1):
 			get_node("/root/Global").user = Vector2(placeX, placeY)
 			get_node("/root/Global").userPlace = self
 	elif get_node("/root/Global").player == "hacker":
-		if hacker == Vector2(placeX + 1, placeY) or hacker == Vector2(placeX + 1, placeY):
+		if (hacker.x == placeX + 1 and hacker.y == placeY) or (hacker.x == placeX and hacker.y == placeY + 1):
 			get_node("/root/Global").hacker = Vector2(placeX, placeY)
 			get_node("/root/Global").hackerPlace = self
 	

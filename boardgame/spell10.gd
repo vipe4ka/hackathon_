@@ -9,6 +9,7 @@ var user
 var hacker
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	cards = get_node("/root/Global").items_user
 	player = get_node("/root/Global").player
 	user = get_node("/root/Global").user
 	hacker = get_node("/root/Global").hacker
@@ -34,17 +35,24 @@ func _on_pressed():
 		get_node("/root/Global").player = "hacker"
 	elif get_node("/root/Global").player == "hacker":
 		get_node("/root/Global").player = "user"
-	check_current_card()
-
-func check_current_card():
-	var current_card_pressed = get_node("/root/Global").current_card_pressed
-	var player = get_node("/root/Global").player
-	if current_card_pressed:
-		if player == "user":
-			get_node("/root/Global").items_user_inventory[current_card_pressed] = null
-		elif player == "hacker":
-			get_node("/root/Global").items_hacker_inventory[current_card_pressed] = null
-	if current_card_pressed != null: 
-		%InventoryContainer.get_child(int(current_card_pressed)).texture_normal = null
-	get_node("/root/Global").current_card_pressed = null
-	
+	add_card_player()
+		
+func add_card_player():
+	var index1 = randi()%3
+	var path = cards[index1]
+	var texture = load(path)
+	var index = null
+	if player == "user":
+		for i in range(6):
+			if !get_node("/root/Global").items_user_inventory[i]:
+				index = i
+				get_node("/root/Global").items_user_inventory[i] = cards[index1]
+				break
+	elif player == "hacker":
+		for i in range(6):
+			if !get_node("/root/Global").items_user_inventory[i]:
+				index = i
+				get_node("/root/Global").items_hacker_inventory[i] = cards[index1]
+				break
+	if index != null:
+		%InventoryContainer.get_child(index).texture_normal = texture
