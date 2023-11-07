@@ -2,15 +2,6 @@
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://b8wbsgx422cs2" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
-[ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
-[ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
-[ext_resource type="Texture2D" uid="uid://mag5e871xvg7" path="res://sprites/sprite/dockbar1.png" id="5_fuhjc"]
-[ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
-[ext_resource type="Texture2D" uid="uid://doagx7go76m4" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
-[ext_resource type="Texture2D" uid="uid://dm7bi68tcmgsy" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
-=======
 [ext_resource type="Texture2D" uid="uid://caufxxsaq8h3j" path="res://sprites/sprite/toolbar.png" id="3_mmjw0"]
 [ext_resource type="Script" path="res://background.gd" id="3_wus3v"]
 [ext_resource type="Script" path="res://toolbar.gd" id="5_601i6"]
@@ -18,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
 [ext_resource type="Texture2D" uid="uid://dm18lnuban1ev" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
 [ext_resource type="Texture2D" uid="uid://k2klks6eo0r7" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
->>>>>>> ba6c69ba6e1d0fa39709cacb3ed826b305041859
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
@@ -345,7 +335,6 @@ offset_bottom = 596.0
 text = "hacker"
 script = ExtResource("18_4e4ho")
 
-[connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
 [connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="usernotask" to="usernotask" method="_on_pressed"]
 [connection signal="pressed" from="usergettask" to="usergettask" method="_on_pressed"]
