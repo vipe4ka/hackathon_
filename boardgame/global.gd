@@ -13,14 +13,27 @@ var user_tasks = [
 var hacker_tasks
 var completedTasks_user = 0
 var completedTasks_hacker = 0
-var items_user
-var items_hacker
-var items_user_inventory
-var items_hacker_inventory
+var card_pressed = false
+var index_current_card = 0
+var items_user = [
+	"res://sprites/sprite/iconetxt.png",
+	"res://sprites/sprite/iconetxt.png",
+	"res://sprites/sprite/iconetxt.png"
+]
+var items_hacker = [
+	"res://sprites/sprite/iconetxt.png",
+	"res://sprites/sprite/iconetxt.png",
+	"res://sprites/sprite/iconetxt.png"
+]
+var items_user_inventory = [null, null, null, null , null, null]
+var items_hacker_inventory = [null, null, null, null , null, null]
 var gamemap
-var bytes
+var ref_cards_user = []
+var ref_cards_hacker = []
 var max_icons = 10
 var max_side_icons = 6
+var current_card_pressed = null
+var bytes
 var go_right
 
 # Called when the node enters the scene tree for the first time.
@@ -29,6 +42,7 @@ func _ready():
 	day = 1
 	score_user = 0
 	score_hacker = 0
+	
 	bytes = 0
 	user = Vector2(0, 0)
 

@@ -34,6 +34,50 @@
 [ext_resource type="Texture2D" uid="uid://dvnbr4rqy5ymx" path="res://sprites/sprite/framebutton/-.png" id="32_ckm2k"]
 [ext_resource type="Texture2D" uid="uid://b11cig6vknxo7" path="res://sprites/sprite/framebutton/sqr.png" id="33_odvvj"]
 [ext_resource type="Texture2D" uid="uid://tve1tqmw12j2" path="res://sprites/sprite/framebutton/x.png" id="34_mmbbs"]
+[ext_resource type="Texture2D" uid="uid://dcas6rmwbqllp" path="res://sprites/sprite/iconpack/mypc.png" id="14_uc85n"]
+[ext_resource type="Texture2D" uid="uid://fboh7511nl3a" path="res://sprites/sprite/iconpack/expl.png" id="15_2bii2"]
+[ext_resource type="Texture2D" uid="uid://cm4wdn518wfpr" path="res://sprites/sprite/iconpack/pxArt (4).png" id="16_flkym"]
+[ext_resource type="Script" path="res://card1.gd" id="17_83ut5"]
+[ext_resource type="Script" path="res://res01.gd" id="17_e1xjb"]
+[ext_resource type="Script" path="res://card2.gd" id="18_ataiy"]
+[ext_resource type="Texture2D" uid="uid://cph3ev8u53u28" path="res://sprites/sprite/iconpack/pxArt (7).png" id="18_vtxfa"]
+[ext_resource type="Script" path="res://card3.gd" id="19_xdy6u"]
+[ext_resource type="Texture2D" uid="uid://cvtwbe6ihteur" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
+[ext_resource type="Texture2D" uid="uid://74ftlqqyoahe" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
+[ext_resource type="Script" path="res://card4.gd" id="20_ticd8"]
+[ext_resource type="Script" path="res://card5.gd" id="21_17ffw"]
+[ext_resource type="Texture2D" uid="uid://lbd3iyyttjom" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
+[ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
+[ext_resource type="Texture2D" uid="uid://dy4chkf8wtkk1" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
+[ext_resource type="Texture2D" uid="uid://cpdehrcqisivv" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
+[ext_resource type="Texture2D" uid="uid://b4of6liww40u0" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
+[ext_resource type="Texture2D" uid="uid://o0gvqsbg0kk5" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
+[ext_resource type="Texture2D" uid="uid://cfmbda1p762rr" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
+[ext_resource type="Texture2D" uid="uid://clydiqm1shq01" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
+[ext_resource type="Texture2D" uid="uid://0p1ny5hgk6yg" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
+[sub_resource type="FontFile" id="FontFile_uneq2"]
+resource_local_to_scene = true
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="GDScript" id="GDScript_7328w"]
+script/source = "extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
@@ -361,5 +405,43 @@ texture = ExtResource("33_odvvj")
 position = Vector2(1902, 869)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("34_mmbbs")
+[node name="InventoryFrame" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 34.0
+offset_top = 754.0
+offset_right = 800.0
+offset_bottom = 995.0
+
+[node name="InventoryContainer" type="HBoxContainer" parent="InventoryFrame"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="card1" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 6.02
+focus_mode = 1
+action_mode = 0
+script = ExtResource("17_83ut5")
+
+[node name="card2" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
+layout_mode = 2
+script = ExtResource("18_ataiy")
+
+[node name="card3" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
+layout_mode = 2
+script = ExtResource("19_xdy6u")
+
+[node name="card4" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
+layout_mode = 2
+script = ExtResource("20_ticd8")
+
+[node name="card5" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
+layout_mode = 2
+script = ExtResource("21_17ffw")
+
+[node name="card6" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
+layout_mode = 2
+script = ExtResource("22_ogro8")
 
 [connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
