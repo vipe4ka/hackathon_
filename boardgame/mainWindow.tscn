@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://crwqk7e32k36s" path="res://sprites/sprite/iconexp.png" id="6_6o8xh"]
 [ext_resource type="Texture2D" uid="uid://dm18lnuban1ev" path="res://sprites/sprite/iconetxt.png" id="7_7v2md"]
 [ext_resource type="Texture2D" uid="uid://k2klks6eo0r7" path="res://sprites/sprite/noteinframe1.png" id="7_45trf"]
+
 [ext_resource type="Script" path="res://taskbar.gd" id="7_px6sx"]
 [ext_resource type="Script" path="res://date.gd" id="9_7cleu"]
 [ext_resource type="FontFile" uid="uid://cltk2747s7l7f" path="res://typeshit/EpilepsySans.ttf" id="9_sufvk"]
@@ -20,32 +21,35 @@
 [ext_resource type="Texture2D" uid="uid://kp53aa0twsvr" path="res://sprites/sprite/iconpack/expl.png" id="15_2bii2"]
 [ext_resource type="Script" path="res://mycomp.gd" id="15_g66hc"]
 [ext_resource type="Texture2D" uid="uid://dtbp0esqdb8ki" path="res://sprites/sprite/iconpack/pxArt (4).png" id="16_flkym"]
-[ext_resource type="Script" path="res://card1.gd" id="17_83ut5"]
 [ext_resource type="Script" path="res://res01.gd" id="17_e1xjb"]
+[ext_resource type="Texture2D" uid="uid://d3kv4iyvlbc3y" path="res://sprites/sprite/iconpack/pxArt (7).png" id="18_vtxfa"]
+[ext_resource type="Texture2D" uid="uid://tvnlmm3h8hod" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
+[ext_resource type="Texture2D" uid="uid://1aqe58j6vccw" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
+[ext_resource type="Texture2D" uid="uid://bf7v4e4fojfva" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
+[ext_resource type="Texture2D" uid="uid://dv01r3huacfom" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
+[ext_resource type="Texture2D" uid="uid://x2rx8o5hgn0k" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
+[ext_resource type="Texture2D" uid="uid://dbtlng6tyfjhk" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
+[ext_resource type="Texture2D" uid="uid://cfkmrwxmxstjw" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
+[ext_resource type="Texture2D" uid="uid://b0qtdh8qlx57g" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
+[ext_resource type="Texture2D" uid="uid://dnry5b56ku1q4" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
+[ext_resource type="Texture2D" uid="uid://cxjyxqwh355ki" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
+[ext_resource type="Texture2D" uid="uid://dvnbr4rqy5ymx" path="res://sprites/sprite/framebutton/-.png" id="32_ckm2k"]
+[ext_resource type="Texture2D" uid="uid://b11cig6vknxo7" path="res://sprites/sprite/framebutton/sqr.png" id="33_odvvj"]
+[ext_resource type="Texture2D" uid="uid://tve1tqmw12j2" path="res://sprites/sprite/framebutton/x.png" id="34_mmbbs"]
+[ext_resource type="Script" path="res://card1.gd" id="17_83ut5"]
 [ext_resource type="Script" path="res://card2.gd" id="18_ataiy"]
 [ext_resource type="Script" path="res://res02.gd" id="18_nkta3"]
-[ext_resource type="Texture2D" uid="uid://b8llrocxtpwss" path="res://sprites/sprite/iconpack/pxArt (7).png" id="18_vtxfa"]
 [ext_resource type="Script" path="res://card3.gd" id="19_xdy6u"]
-[ext_resource type="Texture2D" uid="uid://dldib21ls53n3" path="res://sprites/sprite/iconpack/word.png" id="19_xhn7a"]
-[ext_resource type="Texture2D" uid="uid://b7cihq71gce04" path="res://sprites/sprite/iconpack/pxArt (6).png" id="20_4dg8e"]
 [ext_resource type="Script" path="res://card4.gd" id="20_ticd8"]
 [ext_resource type="Script" path="res://mail.gd" id="20_vqafq"]
 [ext_resource type="Script" path="res://card5.gd" id="21_17ffw"]
 [ext_resource type="Script" path="res://res04.gd" id="21_f5b4e"]
-[ext_resource type="Texture2D" uid="uid://bmqbo43ayj727" path="res://sprites/sprite/iconpack/winrar.png" id="21_okami"]
 [ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
 [ext_resource type="Script" path="res://res05.gd" id="22_x3m74"]
-[ext_resource type="Texture2D" uid="uid://grwrr7mvmovh" path="res://sprites/sprite/iconpack/pxArt (5).png" id="22_y55lt"]
-[ext_resource type="Texture2D" uid="uid://cn8fkllbg0fsq" path="res://sprites/sprite/iconpack/skype.png" id="23_iidhh"]
-[ext_resource type="Texture2D" uid="uid://cvvc8yh3x1cn4" path="res://sprites/sprite/iconpack/pxArt (3).png" id="24_3a75h"]
 [ext_resource type="Script" path="res://res06.gd" id="24_hc6p7"]
-[ext_resource type="Texture2D" uid="uid://d1dgjhv2tnjpx" path="res://sprites/sprite/iconpack/excel.png" id="25_lm8rp"]
-[ext_resource type="Texture2D" uid="uid://rbit1b5wj0kk" path="res://sprites/sprite/iconpack/telegram.png" id="26_cpkr7"]
 [ext_resource type="Script" path="res://1c.gd" id="26_ev87u"]
 [ext_resource type="Script" path="res://res08.gd" id="27_7nis8"]
-[ext_resource type="Texture2D" uid="uid://c1g76fmnpe2s1" path="res://sprites/sprite/iconpack/GARBAGE.png" id="27_ja4xp"]
 [ext_resource type="Script" path="res://res10.gd" id="28_5mw4g"]
-[ext_resource type="Texture2D" uid="uid://lm2r8mrswteg" path="res://sprites/sprite/iconpack/paint.png" id="28_bgno5"]
 [ext_resource type="Script" path="res://res11.gd" id="29_xkyfi"]
 [ext_resource type="Script" path="res://spell12.gd" id="30_q03rd"]
 [ext_resource type="Script" path="res://res13.gd" id="31_q3dx5"]
@@ -90,6 +94,29 @@
 [ext_resource type="Script" path="res://paint.gd" id="80_rjy6d"]
 [ext_resource type="Script" path="res://res57.gd" id="81_6amia"]
 [ext_resource type="Script" path="res://res58.gd" id="82_3bj6t"]
+
+[sub_resource type="FontFile" id="FontFile_uneq2"]
+resource_local_to_scene = true
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="GDScript" id="GDScript_7328w"]
+script/source = "extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+pass
+"
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
@@ -440,6 +467,35 @@ texture = ExtResource("6_6o8xh")
 position = Vector2(362, 1041)
 texture = ExtResource("14_3w0dd")
 
+[node name="-" type="Sprite2D" parent="."]
+position = Vector2(773, 754)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("32_ckm2k")
+
+[node name="Sqr" type="Sprite2D" parent="."]
+position = Vector2(793, 754)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("33_odvvj")
+
+[node name="X" type="Sprite2D" parent="."]
+position = Vector2(813, 754)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("34_mmbbs")
+
+[node name="-2" type="Sprite2D" parent="."]
+position = Vector2(1874, 869)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("32_ckm2k")
+
+[node name="Sqr2" type="Sprite2D" parent="."]
+position = Vector2(1888, 869)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("33_odvvj")
+
+[node name="X2" type="Sprite2D" parent="."]
+position = Vector2(1902, 869)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("34_mmbbs")
 [node name="InventoryFrame" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 34.0
