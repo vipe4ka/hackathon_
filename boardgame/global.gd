@@ -1,8 +1,8 @@
 extends Node
 
 var player
-var user
-var hacker
+var user = Vector2(0, 0)
+var hacker = Vector2(randi()%2 + 3, randi()%3 + 3)
 var day
 var score_user
 var score_hacker
@@ -75,9 +75,7 @@ func _ready():
 	day = 1
 	score_user = 0
 	score_hacker = 0
-	
 	bytes = 0
-	user = Vector2(0, 0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
