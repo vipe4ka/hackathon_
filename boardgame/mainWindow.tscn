@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bdqfwa70io83"]
+[gd_scene load_steps=25 format=3 uid="uid://bdqfwa70io83"]
 
 [ext_resource type="Script" path="res://mainWindow.gd" id="1_l1a22"]
 [ext_resource type="Texture2D" uid="uid://gerkic1jv3t5" path="res://sprites/sprite/background.png" id="1_r836l"]
@@ -15,8 +15,13 @@
 [ext_resource type="Script" path="res://game_info.gd" id="14_r4css"]
 [ext_resource type="Script" path="res://usernotask.gd" id="15_6ch32"]
 [ext_resource type="Script" path="res://usergettask.gd" id="16_l5hqw"]
-[ext_resource type="Script" path="res://hackernotask.gd" id="17_7xyn1"]
+[ext_resource type="Script" path="res://card1.gd" id="17_83ut5"]
 [ext_resource type="Script" path="res://hackergettask.gd" id="18_4e4ho"]
+[ext_resource type="Script" path="res://card2.gd" id="18_ataiy"]
+[ext_resource type="Script" path="res://card3.gd" id="19_xdy6u"]
+[ext_resource type="Script" path="res://card4.gd" id="20_ticd8"]
+[ext_resource type="Script" path="res://card5.gd" id="21_17ffw"]
+[ext_resource type="Script" path="res://card6.gd" id="22_ogro8"]
 
 [sub_resource type="FontFile" id="FontFile_uneq2"]
 resource_local_to_scene = true
@@ -131,60 +136,47 @@ offset_bottom = 596.0
 text = "hacker"
 script = ExtResource("18_4e4ho")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="InventoryFrame" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 34.0
 offset_top = 754.0
 offset_right = 800.0
 offset_bottom = 995.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+[node name="InventoryContainer" type="HBoxContainer" parent="InventoryFrame"]
+unique_name_in_owner = true
 layout_mode = 2
 alignment = 1
 
-[node name="card1" type="Button" parent="PanelContainer/HBoxContainer"]
+[node name="card1" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
 layout_mode = 2
-text = "no hacker
-"
-script = ExtResource("17_7xyn1")
+size_flags_stretch_ratio = 6.02
+focus_mode = 1
+action_mode = 0
+script = ExtResource("17_83ut5")
 
-[node name="card2" type="Button" parent="PanelContainer/HBoxContainer"]
+[node name="card2" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
 layout_mode = 2
-text = "no hacker
-"
-script = ExtResource("17_7xyn1")
+script = ExtResource("18_ataiy")
 
-[node name="card3" type="Button" parent="PanelContainer/HBoxContainer"]
+[node name="card3" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
 layout_mode = 2
-text = "no hacker
-"
-script = ExtResource("17_7xyn1")
+script = ExtResource("19_xdy6u")
 
-[node name="card4" type="Button" parent="PanelContainer/HBoxContainer"]
+[node name="card4" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
 layout_mode = 2
-text = "no hacker
-"
-script = ExtResource("17_7xyn1")
+script = ExtResource("20_ticd8")
 
-[node name="card5" type="Button" parent="PanelContainer/HBoxContainer"]
+[node name="card5" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
 layout_mode = 2
-text = "no hacker
-"
-script = ExtResource("17_7xyn1")
+script = ExtResource("21_17ffw")
 
-[node name="card6" type="Button" parent="PanelContainer/HBoxContainer"]
+[node name="card6" type="TextureButton" parent="InventoryFrame/InventoryContainer"]
 layout_mode = 2
-text = "no hacker
-"
-script = ExtResource("17_7xyn1")
+script = ExtResource("22_ogro8")
 
 [connection signal="pressed" from="toolbutton" to="toolbar" method="_on_button_pressed"]
 [connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="usernotask" to="usernotask" method="_on_pressed"]
 [connection signal="pressed" from="usergettask" to="usergettask" method="_on_pressed"]
 [connection signal="pressed" from="hackergettask" to="hackergettask" method="_on_pressed"]
-[connection signal="pressed" from="PanelContainer/HBoxContainer/card1" to="PanelContainer/HBoxContainer/card1" method="_on_pressed"]
-[connection signal="pressed" from="PanelContainer/HBoxContainer/card2" to="PanelContainer/HBoxContainer/card2" method="_on_pressed"]
-[connection signal="pressed" from="PanelContainer/HBoxContainer/card3" to="PanelContainer/HBoxContainer/card3" method="_on_pressed"]
-[connection signal="pressed" from="PanelContainer/HBoxContainer/card4" to="PanelContainer/HBoxContainer/card4" method="_on_pressed"]
-[connection signal="pressed" from="PanelContainer/HBoxContainer/card5" to="PanelContainer/HBoxContainer/card5" method="_on_pressed"]
-[connection signal="pressed" from="PanelContainer/HBoxContainer/card6" to="PanelContainer/HBoxContainer/card6" method="_on_pressed"]
