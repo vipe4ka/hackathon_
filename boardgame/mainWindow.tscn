@@ -120,7 +120,6 @@ func _process(delta):
 pass
 "
 
->>>>>>> 6b600f4e94ec2425f4fb4eb4fc5b1ac9da9c82b5
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_l1a22")
 
