@@ -5,10 +5,10 @@ var player
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_node("/root/Global").player
-	print_info(player)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	print_info(player)
 	if get_node("/root/Global").completedTasks_user == get_node("/root/Global").count_tasks[get_node("/root/Global").day]:
 		get_node("/root/Global").day += 1
 		get_node("/root/Global").completedTasks_user = 0
@@ -32,7 +32,7 @@ func print_info(player):
 		label.text += "Играет пользователь\n"
 		avatar.position = Vector2(-150, 10)
 		avatar.scale = Vector2(0.6, 0.6);
-	else:
+	elif player == "hacker":
 		avatar.texture = load("res://sprites/sprite/hacker.png")
 		score = get_node("/root/Global").score_hacker
 		label.text += "Играет хакер\n"
