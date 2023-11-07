@@ -7,6 +7,7 @@ var score_hacker
 var count_tasks = {1: 3, 2: 4, 3: 5}
 var completedTasks_user = 0
 var completedTasks_hacker = 0
+var card_pressed = false
 
 var max_icons = 10
 var max_side_icons = 6
