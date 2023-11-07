@@ -15,6 +15,7 @@ func _ready():
 func _process(delta):
 	pass
 
+
 func _on_pressed():
 	if get_node("/root/Global").player == "user":
 		if user == Vector2(placeX, placeY - 1) or user == Vector2(placeX - 1, placeY) or user == Vector2(placeX + 1, placeY) + user == Vector2(placeX, placeY + 1):
@@ -31,3 +32,16 @@ func _on_pressed():
 		get_node("/root/Global").player = "hacker"
 	elif get_node("/root/Global").player == "hacker":
 		get_node("/root/Global").player = "user"
+		check_current_card()
+
+func check_current_card():
+	var current_card_pressed = get_node("/root/Global").current_card_pressed
+	var player = get_node("/root/Global").player
+	if current_card_pressed:
+		if player == "user":
+			get_node("/root/Global").items_user_inventory[current_card_pressed] = null
+		elif player == "hacker":
+			get_node("/root/Global").items_hacker_inventory[current_card_pressed] = null
+	if current_card_pressed != null: 
+		%InventoryContainer.get_child(int(current_card_pressed)).texture_normal = null
+	get_node("/root/Global").current_card_pressed = null

@@ -16,6 +16,7 @@ func _process(delta):
 	pass
 
 func _on_pressed():
+	get_node("/root/Global").bytes += 1
 	if get_node("/root/Global").player == "user":
 		if user == Vector2(placeX, placeY - 1) or user == Vector2(placeX - 1, placeY) or user == Vector2(placeX + 1, placeY) + user == Vector2(placeX, placeY + 1):
 			get_node("/root/Global").user = Vector2(placeX, placeY)
