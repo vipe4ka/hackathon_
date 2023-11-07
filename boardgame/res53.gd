@@ -1,8 +1,8 @@
 extends TextureButton
 
 var player
-var placeX = 0
-var placeY = 0
+var placeX = 5
+var placeY = 3
 var user
 var hacker
 # Called when the node enters the scene tree for the first time.
@@ -16,12 +16,15 @@ func _process(delta):
 	pass
 
 func _on_pressed():
+	get_node("/root/Global").bytes += 1
 	if get_node("/root/Global").player == "user":
 		if user == Vector2(placeX - 1, placeY) or user == Vector2(placeX, placeY - 1) or user == Vector2(placeX + 1, placeY):
 			get_node("/root/Global").user = Vector2(placeX, placeY)
+			get_node("/root/Global").userPlace = self
 	elif get_node("/root/Global").player == "hacker":
 		if hacker == Vector2(placeX - 1, placeY) or hacker == Vector2(placeX, placeY - 1) or hacker == Vector2(placeX + 1, placeY):
 			get_node("/root/Global").hacker = Vector2(placeX, placeY)
+			get_node("/root/Global").hackerPlace = self
 	
 	
 	

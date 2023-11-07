@@ -3,27 +3,62 @@ extends Node
 var player
 var user = Vector2(0, 0)
 var hacker = Vector2(randi()%2 + 3, randi()%3 + 3)
+var userPlace
+var hackerPlace
 var day
 var score_user
 var score_hacker
-var count_tasks = {1: 3, 2: 4, 3: 5}
+var count_tasks = {1: 4, 2: 5, 3: 6}
 var user_tasks = [
-	
+	"Скачать браузер Амиго в Microsoft Internet Explorer",
+	"Скачать и создать почту Mail.ru",
+	"Занести данные клиента в таблицу Excel",
+	"Проверить электронную почту",
+	"Написать отчет и отправить начальнику",
+	"Поработать в 1С.Бухгалтерия",
+	"Поздравить коллегу с ДР в ОК",
+	"Проверить Telegram",
+	"Нарисовать открытку маме в Paint",
+	"Обработать фото кошки в гимпе",
+	"Посмотреть анкеты в «Дай винчике»",
+	"Оплатить лицензию WinRar",
+	"Обновить корзину до новой версии",
+	"Проверить пк на вирусы в Avast",
+	"Позвонить маме в скайп",
+	"Очистить корзину"
 ]
-var hacker_tasks
+var hacker_tasks = [
+	"Внедрение вредоносных скриптов в сайты",
+	"Распространение вредоносного по",
+	"Украсть корпоративные данные из таблиц",
+	"Отправка фишинговых писем через почту",
+	"Закинуть файл с вредоносным макросом.",
+	"Бомбер сотрудников.",
+	"Поставить «единички» коллегам",
+	"Взломать аккаунт в Телеграм",
+	"Подменить открытку маме",
+	"Подменить метаданные фото кошки",
+	"Украсть компромат в Телеграм",
+	"Запаролить все архивы",
+	"Добавить бэкдор корзины",
+	"Помешать работе антивируса",
+	"Получить доступ к вебке",
+	"Заполучить данные корзины"
+]
 var completedTasks_user = 0
 var completedTasks_hacker = 0
 var card_pressed = false
 var index_current_card = 0
 var items_user = [
-	"res://sprites/sprite/iconetxt.png",
-	"res://sprites/sprite/iconetxt.png",
-	"res://sprites/sprite/iconetxt.png"
+	"res://sprites/iconshack/ddos.png",
+	"res://sprites/iconklerk/firewall.png",
+	"res://sprites/iconklerk/strong pass.png"
 ]
 var items_hacker = [
-	"res://sprites/sprite/iconetxt.png",
-	"res://sprites/sprite/iconetxt.png",
-	"res://sprites/sprite/iconetxt.png"
+	"res://sprites/iconshack/ddos.png",
+	"res://sprites/iconshack/fishing.png",
+	"res://sprites/iconshack/sql ink.png",
+	"res://sprites/iconshack/troyan.png"
 ]
 var items_user_inventory = [null, null, null, null , null, null]
 var items_hacker_inventory = [null, null, null, null , null, null]
@@ -43,6 +78,8 @@ func _ready():
 	score_user = 0
 	score_hacker = 0
 	bytes = 0
+	userPlace = %mycomp
+	hackerPlace = TextureButton.new()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
