@@ -12,8 +12,9 @@ func _process(delta):
 	pass
 
 func _on_pressed():
+	get_node("/root/Global").bytes += 1
 	check_current_card()
-
+	
 func check_current_card():
 	var current_card_pressed = get_node("/root/Global").current_card_pressed
 	var player = get_node("/root/Global").player

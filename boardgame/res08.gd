@@ -12,6 +12,7 @@ func _process(delta):
 	pass
 
 func _on_pressed():
+	get_node("/root/Global").bytes += 1
 	check_current_card()
 
 func check_current_card():
@@ -25,3 +26,5 @@ func check_current_card():
 	if current_card_pressed != null: 
 		%InventoryContainer.get_child(int(current_card_pressed)).texture_normal = null
 	get_node("/root/Global").current_card_pressed = null
+	
+	

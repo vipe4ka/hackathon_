@@ -1,19 +1,15 @@
 extends TextureButton
 
-var cards
-var current_card
-var player
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	pass # Replace with function body.
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-func _on_pressed():
-	check_current_card()
-
+	
 func check_current_card():
 	var current_card_pressed = get_node("/root/Global").current_card_pressed
 	var player = get_node("/root/Global").player
